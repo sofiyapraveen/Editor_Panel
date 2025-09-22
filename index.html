@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Text Editor Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app-container">
+    <div id="slider-container">
+      <div id="slider">
+        <div class="slide" data-index="0">
+          <img src="https://i.postimg.cc/dQ9YP4wq/pexels-donaldtong94-189296.jpg" alt="Slide 1" />
+          
+        </div>
+        <div class="slide" data-index="1">
+          <img src="https://i.postimg.cc/NM7WtjhN/pexels-konstantinos-eleftheriadis-916620-2034335.jpg" alt="Slide 2" />
+        </div>
+        <div class="slide" data-index="2">
+          <img src="https://i.postimg.cc/3xs6DvYS/pexels-pixabay-164595.jpg" alt="Slide 3" />
+        </div>
+      </div>
+      <button id="prev-slide" aria-label="Previous Slide">&#8592;</button>
+      <button id="next-slide" aria-label="Next Slide">&#8594;</button>
+    </div>
+
+    <aside id="editor-panel">
+      <button id="add-text-btn">Add Text</button>
+      <div class="editor-group">
+        <label for="language-select">Language</label>
+        <select id="language-select">
+          <option value="en" selected>English</option>
+        
+        </select>
+      </div>
+      <div class="editor-group">
+        <label for="text-input">New Text</label>
+        <textarea id="text-input" rows="4" placeholder="Enter text here..."></textarea>
+      </div>
+      <div class="editor-group">
+        <label for="font-family-select">Font Family</label>
+        <select id="font-family-select">
+          <option value="Arial" selected>Arial</option>
+          <option value="Times New Roman">Times New Roman</option>
+          <option value="Courier New">Courier New</option>
+          <option value="Georgia">Georgia</option>
+          <option value="Verdana">Verdana</option>
+          <option value="Pacifico">Pacifico</option>
+          <option value="Cinzel">Cinzel</option>
+          <option value="Lora">Lora</option>
+          <option value="Spectral SC">Spectral SC</option>
+          <option value="Petit Formal Script">Petit Formal Script</option>
+        </select>
+      </div>
+      <div class="editor-group">
+        <label for="font-style-select">Font Style</label>
+        <select id="font-style-select">
+          <option value="normal" selected>Regular</option>
+          <option value="bold">Bold</option>
+          <option value="italic">Italic</option>
+          <option value="bold italic">Bold Italic</option>
+        </select>
+      </div>
+      <div class="editor-group">
+        <label for="text-align-select">Text Align</label>
+        <select id="text-align-select">
+          <option value="left" selected>Left</option>
+          <option value="center">Center</option>
+          <option value="right">Right</option>
+          <option value="justify">Justify</option>
+        </select>
+      </div>
+      <div class="editor-group">
+        <label for="line-height-input">Line Height</label>
+        <input type="number" id="line-height-input" min="1" max="32" step="1" value="2" />
+      </div>
+      <div class="editor-group">
+        <label for="animation-select">Animation</label>
+        <select id="animation-select">
+          <option value="none" selected>None</option>
+          <option value="fade">Fade</option>
+          <option value="slide">Slide</option>
+          <option value="zoom">Zoom</option>
+        </select>
+      </div>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
