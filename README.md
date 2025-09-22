@@ -1,5 +1,4 @@
-# Text_Editor_Panel
-
+# Editor_Panel
 A simple and lightweight **Text Editor Panel** built using **HTML, CSS, and JavaScript**. This project allows users to write, edit, and format text directly in a browser without any backend or external libraries.
 
 ---
